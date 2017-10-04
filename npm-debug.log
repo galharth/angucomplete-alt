@@ -1,0 +1,122 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save',
+1 verbose cli   'https://github.com/galharth/angucomplete-alt.git' ]
+2 info using npm@3.10.8
+3 info using node@v6.9.1
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData https://github.com/galharth/angucomplete-alt.git
+8 silly fetchOtherPackageData https://github.com/galharth/angucomplete-alt.git
+9 silly cache add args [ 'https://github.com/galharth/angucomplete-alt.git', null ]
+10 verbose cache add spec https://github.com/galharth/angucomplete-alt.git
+11 silly cache add parsed spec Result {
+11 silly cache add   raw: 'https://github.com/galharth/angucomplete-alt.git',
+11 silly cache add   scope: null,
+11 silly cache add   escapedName: null,
+11 silly cache add   name: null,
+11 silly cache add   rawSpec: 'https://github.com/galharth/angucomplete-alt.git',
+11 silly cache add   spec: 'git+https://github.com/galharth/angucomplete-alt.git',
+11 silly cache add   type: 'hosted',
+11 silly cache add   hosted:
+11 silly cache add    { type: 'github',
+11 silly cache add      ssh: 'git@github.com:galharth/angucomplete-alt.git',
+11 silly cache add      sshUrl: 'git+ssh://git@github.com/galharth/angucomplete-alt.git',
+11 silly cache add      httpsUrl: 'git+https://github.com/galharth/angucomplete-alt.git',
+11 silly cache add      gitUrl: 'git://github.com/galharth/angucomplete-alt.git',
+11 silly cache add      shortcut: 'github:galharth/angucomplete-alt',
+11 silly cache add      directUrl: 'https://raw.githubusercontent.com/galharth/angucomplete-alt/master/package.json' } }
+12 verbose addRemoteGit caching https://github.com/galharth/angucomplete-alt.git
+13 verbose addRemoteGit git+https://github.com/galharth/angucomplete-alt.git is a repository hosted by github
+14 silly tryClone cloning git+https://github.com/galharth/angucomplete-alt.git via git+https://github.com/galharth/angucomplete-alt.git
+15 verbose tryClone git-https-github-com-galharth-angucomplete-alt-git-01c3c2eb not in flight; caching
+16 verbose correctMkdir /Users/galharth/.npm/_git-remotes correctMkdir not in flight; initializing
+17 verbose makeDirectory /Users/galharth/.npm/_git-remotes creation not in flight; initializing
+18 silly makeDirectory /Users/galharth/.npm/_git-remotes uid: 501 gid: 20
+19 info git [ 'clone',
+19 info git   '--template=/Users/galharth/.npm/_git-remotes/_templates',
+19 info git   '--mirror',
+19 info git   'https://github.com/galharth/angucomplete-alt.git',
+19 info git   '/Users/galharth/.npm/_git-remotes/git-https-github-com-galharth-angucomplete-alt-git-01c3c2eb' ]
+20 verbose mirrorRemote git+https://github.com/galharth/angucomplete-alt.git git clone https://github.com/galharth/angucomplete-alt.git
+21 verbose correctMkdir /Users/galharth/.npm/_git-remotes correctMkdir not in flight; initializing
+22 verbose setPermissions git+https://github.com/galharth/angucomplete-alt.git set permissions on /Users/galharth/.npm/_git-remotes/git-https-github-com-galharth-angucomplete-alt-git-01c3c2eb
+23 verbose resolveHead git+https://github.com/galharth/angucomplete-alt.git original treeish: master
+24 info git [ 'rev-list', '-n1', 'master' ]
+25 silly resolveHead git+https://github.com/galharth/angucomplete-alt.git resolved treeish: 57bcac37ed68732f66b7b6b0f6125004da8c9a7e
+26 verbose resolveHead git+https://github.com/galharth/angucomplete-alt.git resolved Git URL: git+https://github.com/galharth/angucomplete-alt.git#57bcac37ed68732f66b7b6b0f6125004da8c9a7e
+27 silly resolveHead Git working directory: /var/folders/_0/j9tcg9853x93k5s4xn8z5wxc0000gn/T/npm-6011-ae03c952/git-cache-d682816e/57bcac37ed68732f66b7b6b0f6125004da8c9a7e
+28 info git [ 'clone',
+28 info git   '/Users/galharth/.npm/_git-remotes/git-https-github-com-galharth-angucomplete-alt-git-01c3c2eb',
+28 info git   '/var/folders/_0/j9tcg9853x93k5s4xn8z5wxc0000gn/T/npm-6011-ae03c952/git-cache-d682816e/57bcac37ed68732f66b7b6b0f6125004da8c9a7e' ]
+29 verbose cloneResolved git+https://github.com/galharth/angucomplete-alt.git clone Cloning into '/var/folders/_0/j9tcg9853x93k5s4xn8z5wxc0000gn/T/npm-6011-ae03c952/git-cache-d682816e/57bcac37ed68732f66b7b6b0f6125004da8c9a7e'...
+29 verbose cloneResolved done.
+30 info git [ 'checkout', '57bcac37ed68732f66b7b6b0f6125004da8c9a7e' ]
+31 verbose checkoutTreeish git+https://github.com/galharth/angucomplete-alt.git checkout Note: checking out '57bcac37ed68732f66b7b6b0f6125004da8c9a7e'.
+31 verbose checkoutTreeish
+31 verbose checkoutTreeish You are in 'detached HEAD' state. You can look around, make experimental
+31 verbose checkoutTreeish changes and commit them, and you can discard any commits you make in this
+31 verbose checkoutTreeish state without impacting any branches by performing another checkout.
+31 verbose checkoutTreeish
+31 verbose checkoutTreeish If you want to create a new branch to retain commits you create, you may
+31 verbose checkoutTreeish do so (now or later) by using -b with the checkout command again. Example:
+31 verbose checkoutTreeish
+31 verbose checkoutTreeish   git checkout -b <new-branch-name>
+31 verbose checkoutTreeish
+31 verbose checkoutTreeish HEAD is now at 57bcac3... Add currentIndexHover to directive
+32 info git [ 'submodule', '-q', 'update', '--init', '--recursive' ]
+33 verbose updateSubmodules git+https://github.com/galharth/angucomplete-alt.git submodule update
+34 verbose addLocalDirectory /Users/galharth/.npm/angucomplete-alt/3.0.0/package.tgz not in flight; packing
+35 verbose correctMkdir /Users/galharth/.npm correctMkdir not in flight; initializing
+36 verbose tar pack [ '/Users/galharth/.npm/angucomplete-alt/3.0.0/package.tgz',
+36 verbose tar pack   '/var/folders/_0/j9tcg9853x93k5s4xn8z5wxc0000gn/T/npm-6011-ae03c952/git-cache-d682816e/57bcac37ed68732f66b7b6b0f6125004da8c9a7e' ]
+37 verbose tarball /Users/galharth/.npm/angucomplete-alt/3.0.0/package.tgz
+38 verbose folder /var/folders/_0/j9tcg9853x93k5s4xn8z5wxc0000gn/T/npm-6011-ae03c952/git-cache-d682816e/57bcac37ed68732f66b7b6b0f6125004da8c9a7e
+39 verbose addLocalTarball adding from inside cache /Users/galharth/.npm/angucomplete-alt/3.0.0/package.tgz
+40 verbose correctMkdir /Users/galharth/.npm correctMkdir not in flight; initializing
+41 verbose addRemoteGit data._from: git+https://github.com/galharth/angucomplete-alt.git
+42 verbose addRemoteGit data._resolved: git+https://github.com/galharth/angucomplete-alt.git#57bcac37ed68732f66b7b6b0f6125004da8c9a7e
+43 silly cache afterAdd angucomplete-alt@3.0.0
+44 verbose afterAdd /Users/galharth/.npm/angucomplete-alt/3.0.0/package/package.json not in flight; writing
+45 verbose correctMkdir /Users/galharth/.npm correctMkdir not in flight; initializing
+46 verbose afterAdd /Users/galharth/.npm/angucomplete-alt/3.0.0/package/package.json written
+47 silly install normalizeTree
+48 silly loadCurrentTree Finishing
+49 silly loadIdealTree Starting
+50 silly install loadIdealTree
+51 silly cloneCurrentTree Starting
+52 silly install cloneCurrentTreeToIdealTree
+53 silly cloneCurrentTree Finishing
+54 silly loadShrinkwrap Starting
+55 silly install loadShrinkwrap
+56 silly loadShrinkwrap Finishing
+57 silly loadAllDepsIntoIdealTree Starting
+58 silly install loadAllDepsIntoIdealTree
+59 silly rollbackFailedOptional Starting
+60 silly rollbackFailedOptional Finishing
+61 silly runTopLevelLifecycles Finishing
+62 silly install printInstalled
+63 verbose stack Error: Refusing to install angucomplete-alt as a dependency of itself
+63 verbose stack     at checkSelf (/usr/local/lib/node_modules/npm/lib/install/validate-args.js:53:14)
+63 verbose stack     at Array.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/slide/lib/bind-actor.js:15:8)
+63 verbose stack     at LOOP (/usr/local/lib/node_modules/npm/node_modules/slide/lib/chain.js:15:14)
+63 verbose stack     at chain (/usr/local/lib/node_modules/npm/node_modules/slide/lib/chain.js:20:5)
+63 verbose stack     at /usr/local/lib/node_modules/npm/lib/install/validate-args.js:16:5
+63 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:52:35
+63 verbose stack     at Array.forEach (native)
+63 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:52:11
+63 verbose stack     at Array.forEach (native)
+63 verbose stack     at asyncMap (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:51:8)
+64 verbose cwd /Users/galharth/Documents/angucomplete-alt
+65 error Darwin 15.6.0
+66 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "--save" "https://github.com/galharth/angucomplete-alt.git"
+67 error node v6.9.1
+68 error npm  v3.10.8
+69 error code ENOSELF
+70 error Refusing to install angucomplete-alt as a dependency of itself
+71 error If you need help, you may report this error at:
+71 error     <https://github.com/npm/npm/issues>
+72 verbose exit [ 1, true ]
